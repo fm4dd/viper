@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
    char *lsf  = 0;			// filename loadsourcefile
    char *pf   = 0;			// filename progressfile
    int  rf    = 0;			// runtime limit
-   int  chr	  = 0;			// characterset
+   int  chr   = 0;			// characterset
    int  pws   = 1;			// min passwordlength
    int  pwl   = DEFAULTPWLENGTH;	// max passwordlength
    int  ui    = 10;			// console update interval
