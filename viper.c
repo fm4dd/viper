@@ -1,28 +1,27 @@
 #include "viper.h"
 
-int main(int argc, char *argv[])
-{
-	char *file = 0;							// filename passwordfile
-	char pass[MAXENCPWDLENGTH+1] = "";	// encrypted password
-	char *user = 0;							// username in passwordfile
-	char *lsf  = 0;							// filename loadsourcefile
-	char *pf   = 0;							// filename progressfile
-	int  rf    = 0;							// runtime limit
-	int  chr	  = 0;							// characterset
-	int  pws   = 1;							// min passwordlength
-	int  pwl   = DEFAULTPWLENGTH;			// max passwordlength
-	int  ui    = 10;							// console update interval
-	int  vo    = 0;							// verbose output
-	int  i     = 0;							// loop variable
-	FILE *fp_lsf;								// loadsourcefile
-	FILE *fp_file;								// passwordfile
-	FILE *fp_cset;								// character set file
-	char line[255];							// tmp buffer
-	char vp_stat[255];						// last saved status
-        char * linebuf = NULL;
-	
-	printf("\nViper v1.6 (Hale 05/12/2000) - C version by Frank4DD (05/05/2014)\n");
-	printf("Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin\n\n");
+int main(int argc, char *argv[]) {
+   char *file = 0;			// filename passwordfile
+   char pass[MAXENCPWDLENGTH+1] = "";	// encrypted password
+   char *user = 0;			// username in passwordfile
+   char *lsf  = 0;			// filename loadsourcefile
+   char *pf   = 0;			// filename progressfile
+   int  rf    = 0;			// runtime limit
+   int  chr	  = 0;			// characterset
+   int  pws   = 1;			// min passwordlength
+   int  pwl   = DEFAULTPWLENGTH;	// max passwordlength
+   int  ui    = 10;			// console update interval
+   int  vo    = 0;			// verbose output
+   int  i     = 0;			// loop variable
+   FILE *fp_lsf;			// loadsourcefile
+   FILE *fp_file;			// passwordfile
+   FILE *fp_cset;			// character set file
+   char line[255];			// tmp buffer
+   char vp_stat[255];			// last saved status
+   char * linebuf = NULL;
+
+   printf("\nViper v1.6 (Hale 05/12/2000) - C version by Frank4DD (05/05/2014)\n");
+   printf("Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin\n\n");
 	
 	/* need help? */
 	
@@ -235,5 +234,3 @@ the_res(struct crack_input erg, char * endpass, struct tm start)
 	printf("\nViper exiting...\n");
 	exit(0);
 }
-
-
