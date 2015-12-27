@@ -25,13 +25,13 @@ The original, Hale's viper.pl on Linux: 16329 CPS
 
 Hale's viper.pl on Solaris: 659 CPS
 
-| System | MHz | OS | Version | Compiler | CPS rate |
+| System | CPU | OS | Version | Compiler | CPS rate |
 |--------|-----|----|---------|----------|----------|
-|Pentium III | 650 | Linux | 2.2.13 | gcc | 39062 |
-|Pentium III | 650 | Windows | Win98 | gcc | 51282 |
-|Pentium III | 650 | DOS | 7.0  | djgpp | 51282 |
-| SUN U-Sparc | 400 | Solaris | 2.6 | gcc | 24691 |
-| HP WS 778 | 180 | HPUX | 10.20 | gcc | 6993 |
+| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 39062 |
+| Desktop PC | Pentium III 650Mhz | Windows | Win98 | gcc | 51282 |
+| Desktop PC | Pentium III 650Mhz | DOS | 7.0  | djgpp | 51282 |
+| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 24691 |
+| HP 9000-B180L |  PA-7300LC 180Mhz | HPUX | 10.20 | gcc | 6993 |
 | HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 121,212 |
 | Cloud Server | 1x CPU shared | Linux | 2.6.31 | gcc | 150,000 |
 
