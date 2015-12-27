@@ -32,6 +32,9 @@ Hale's viper.pl on Solaris: 659 CPS
 |Pentium III | 650 | DOS | 7.0  | djgpp | 51282 |
 | SUN U-Sparc | 400 | Solaris | 2.6 | gcc | 24691 |
 | HP WS 778 | 180 | HPUX | 10.20 | gcc | 6993 |
+| HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 121,212 |
+| Cloud Server | 1x CPU shared | Linux | 2.6.31 | gcc | 150,000 |
+
 
 ### Usage
 
