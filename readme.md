@@ -49,6 +49,36 @@ Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
         -ui #        Console update interval (in minutes - default 10)
         -v           Verbose output</pre>
 
+### Usage Example
+
+<pre>susie112:/home/me/viper-1.6/src # ./viper -f passwd -u root -ui 1 -v
+
+Viper v1.6 (Hale 05/12/2000) - C version by Frank4DD (05/05/2014)
+Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
+
+Found: user root pw:reUJbHrFWYCQk
+Found: Charset 0 in charset.ini
+...command line parameters loaded.
+Character set is 93 chars long
+Starting crack on: Sun Oct  3 23:04:44 2009
+Cracking for pass length 1 (93 possibilities)
+Cracking for pass length 2 (8649 possibilities)
+Cracking for pass length 3 (804357 possibilities)
+Cracking for pass length 4 (7.48052e+07 possibilities)
+
+[ Length: | Last:    | CPS:    | Time Spent:      | Time Remaining:  | Done:  ]
+-------------------------------------------------------------------------------
+[    4    |     kq2r |  150000 | 000d:00h:01m:00s | 000d:00h:07m:18s | 12.03% ]
+
+ The password has been located.
+ Username : root
+ Password : test
+ Started  : Sun Oct  3 23:04:44 2009
+ Finished : Sun Oct  3 23:06:30 2009
+ Duration : 000d:00h:01m:00s
+
+Viper exiting...</pre>
+
 ### Latest Updates
 
 * Viper Version 1.5 has been updated to use the OpenSSL DES routines for 
