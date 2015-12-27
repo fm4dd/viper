@@ -47,7 +47,7 @@ Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
         -pws #       Minimum password length (starting value, default 1)
         -pwl #       Maximum password length (default 8 - maximum 16)
         -ui #        Console update interval (in minutes - default 10)
-        -v           Verbose output</per>
+        -v           Verbose output</pre>
 
 ### Latest Updates
 
