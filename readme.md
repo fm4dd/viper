@@ -58,3 +58,5 @@ coming from the OpenSSL libraries. In addition to the libraries, the OpenSSL
 headers (dev package) need to be installed in order to be able to compile Viper.
 
 * Viper Version 1.6 received bugfixes thanks to David C. Rankin.
+
+See also http://fm4dd.com/sw/viper/
