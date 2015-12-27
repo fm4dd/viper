@@ -1,15 +1,7 @@
-Latest Updates
-* * *
-Viper Version 1.6 received bugfixes thanks to David C. Rankin.
+## Viper
 
-Viper Version 1.5 has been updated to use the OpenSSL DES routines for 
-encrypting. The UFC library has been dropped as outdated and even generating
-segfaults on some systems. There  is a performance gain of approx. 25%
-coming from the OpenSSL libraries. In addition to the libraries, the OpenSSL
-headers (dev package) need to be installed in order to be able to compile Viper.
+Frank4DD, @ May 2000
 
-About Viper
-* * * 
 Viper is a prute force UNIX-style password cracker for passwords encrypt with
 crypt. It has been developed from Hale's viper 1.4 Perl  program.
 While there are other more powerful crack programs out, this one is about
@@ -24,14 +16,10 @@ Originally, the ufc-crypt implementation seemed to be the fastest
 crypt function around, using it made porting the program to different platforms
 easy.
 
-This distribution includes binaries for Linux, Solaris, HPUX and DOS/Windows.
-If you have the choice of an OS on an Intel/AMD platform, I'd recommend
-to use Win95/98 over Linux. Somehow that OS is faster then Linux, see 
-benchmarks below. I don't know why, if someone could explain please do. 
-I also expected a big advantage of powerful SUN systems against that
-PC stuff, but to my surprise 400 MHz SUN does a bad job.
+Viper runs under Linux, Solaris, HPUX and DOS/Windows.
 
-OK, here are some benchmarks:
+
+### Benchmarks
 
 System      MHz        OS        Version       compiler       CPS rate
 -----------------------------------------------------------------------
@@ -44,17 +32,10 @@ SUN U-Sparc 400        Solaris   2.6           gcc            24691
 Hale's viper.pl on Solaris:                                     659
 
 HP778       180        HPUX      10.20         gcc             6993
-Hale's viper.pl on HPUX: stopped after a long time, probably below 200 CPS.
 
+### Usage
 
-Still, it is high time to move into biometrics or smartcards to replace 
-passwords. If we are getting closer, I don't wanna dream about other guys
-with more money and energy.
-
-May 2000,
-Frank4DD
-
-Viper v1.6 (Hale 05/12/2000) - C version by Frank4DD (05/05/2014)
+<pre>Viper v1.6 (Hale 05/12/2000) - C version by Frank4DD (05/05/2014)
 Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
 
         -f <file>    File to load password from (required unless using lsf)
@@ -66,5 +47,14 @@ Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
         -pws #       Minimum password length (starting value, default 1)
         -pwl #       Maximum password length (default 8 - maximum 16)
         -ui #        Console update interval (in minutes - default 10)
-        -v           Verbose output
+        -v           Verbose output</per>
 
+### Latest Updates
+
+Viper Version 1.5 has been updated to use the OpenSSL DES routines for 
+encrypting. The UFC library has been dropped as outdated and even generating
+segfaults on some systems. There  is a performance gain of approx. 25%
+coming from the OpenSSL libraries. In addition to the libraries, the OpenSSL
+headers (dev package) need to be installed in order to be able to compile Viper.
+
+Viper Version 1.6 received bugfixes thanks to David C. Rankin.
