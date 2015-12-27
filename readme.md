@@ -22,6 +22,7 @@ Viper runs under Linux, Solaris, HPUX and DOS/Windows.
 ### Benchmarks
 
 The original, Hale's viper.pl on Linux: 16329 CPS
+
 Hale's viper.pl on Solaris: 659 CPS
 
 | System | MHz | OS | Version | Compiler | CPS rate |
@@ -50,10 +51,10 @@ Wiltered Fire - www.wilter.com/wf, incl. bugfixes by David C. Rankin
 
 ### Latest Updates
 
-Viper Version 1.5 has been updated to use the OpenSSL DES routines for 
+* Viper Version 1.5 has been updated to use the OpenSSL DES routines for 
 encrypting. The UFC library has been dropped as outdated and even generating
 segfaults on some systems. There  is a performance gain of approx. 25%
 coming from the OpenSSL libraries. In addition to the libraries, the OpenSSL
 headers (dev package) need to be installed in order to be able to compile Viper.
 
-Viper Version 1.6 received bugfixes thanks to David C. Rankin.
+* Viper Version 1.6 received bugfixes thanks to David C. Rankin.
