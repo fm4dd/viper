@@ -21,17 +21,17 @@ Viper runs under Linux, Solaris, HPUX and DOS/Windows.
 
 ### Benchmarks
 
-System      MHz        OS        Version       compiler       CPS rate
------------------------------------------------------------------------
-PIII        650        Linux     2.2.13        gcc            39062
-                       Windows   98            gcc            51282
-                       DOS       7.0           djgpp          51282
-Hale's viper.pl on Linux:                                     16329
+The original, Hale's viper.pl on Linux: 16329 CPS
+Hale's viper.pl on Solaris: 659 CPS
 
-SUN U-Sparc 400        Solaris   2.6           gcc            24691
-Hale's viper.pl on Solaris:                                     659
-
-HP778       180        HPUX      10.20         gcc             6993
+| System | MHz | OS | Version | Compiler | CPS rate |
+|--------|-----|----|---------|----------|----------|
+|Pentium III | 650 | Linux | 2.2.13 | gcc | 39062 |
+|Pentium III | 650 | Windows | Win98 | gcc | 51282 |
+|Pentium III | 650 | DOS | 7.0  | djgpp | 51282 |
+| SUN U-Sparc | 400 | Solaris | 2.6 | gcc | 24691 |
+| HP WS 778 | 180 | HPUX | 10.20 | gcc | 6993 |
+|--------|-----|----|---------|----------|----------|
 
 ### Usage
 
