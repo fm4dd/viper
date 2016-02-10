@@ -71,10 +71,14 @@ int main(int argc, char *argv[]) {
          printf("Error: Can't open %s!\n", lsf);
          exit(-1);
       }
-      fscanf (fp_lsf, "%s", vp_stat);
-		
+
+      ret = fscanf (fp_lsf, "%s", vp_stat);
+      if (ret == EOF) {
+         printf("Error: Can't read from %s!\n", lsf);
+         exit(-1);
+      }
+
       /* check to see if run has been completed */
-	
       if (! (strcmp (vp_stat, FIN_IDENT))) {
          printf("The saved run has been completed.\n");
          printf("Check %s for details.\n", lsf);
@@ -83,14 +87,14 @@ int main(int argc, char *argv[]) {
       }
 			
       /* continue otherwise */
-      fscanf (fp_lsf, "%d", &lsf_out.ci_pws);
-      fscanf (fp_lsf, "%d", &lsf_out.ci_pwl);
-      fscanf (fp_lsf, "%s", lsf_out.ci_pass);
-      fscanf (fp_lsf, "%s", lsf_out.ci_user);
-      fscanf (fp_lsf, "%s", lsf_out.ci_dnum);
-      fscanf (fp_lsf, "%s", lsf_out.ci_cset);
-      fscanf (fp_lsf, "%s", lsf_out.ci_pf);
-      fscanf (fp_lsf, "%d", &lsf_out.ci_ui);
+      ret = fscanf (fp_lsf, "%d", &lsf_out.ci_pws);
+      ret = fscanf (fp_lsf, "%d", &lsf_out.ci_pwl);
+      ret = fscanf (fp_lsf, "%s", lsf_out.ci_pass);
+      ret = fscanf (fp_lsf, "%s", lsf_out.ci_user);
+      ret = fscanf (fp_lsf, "%s", lsf_out.ci_dnum);
+      ret = fscanf (fp_lsf, "%s", lsf_out.ci_cset);
+      ret = fscanf (fp_lsf, "%s", lsf_out.ci_pf);
+      ret = fscanf (fp_lsf, "%d", &lsf_out.ci_ui);
       fclose(fp_lsf);
       lsf_out.ci_rf = 0;
       lsf_out.ci_vo = vo;
@@ -143,8 +147,8 @@ int main(int argc, char *argv[]) {
 
    while ( (fscanf (fp_cset, "%s", line) != EOF) ) {
       if ( chr == (atoi(line)) ) {
-         fscanf (fp_cset, "%s", lsf_out.ci_cset);
-          break;
+         ret = fscanf (fp_cset, "%s", lsf_out.ci_cset);
+         break;
       }
    }
 	
@@ -219,14 +223,14 @@ void the_res(struct crack_input erg, char * endpass, struct tm start) {
    sprintf(message[6], " Finished : %s", asctime(&act_time));
    sprintf(message[7], " Duration : %s\n", time_done);
 	
-   for (r = 1; r <= 7; r++) { printf("%s", message[r]); }
+   for (r = 0; r <= 7; r++) { printf("%s", message[r]); }
 
    if(strlen(lsf_out.ci_pf)) {
       if ( (fp_pf = fopen(lsf_out.ci_pf, "w")) == NULL ) {
          printf("Error: Can't open %s!\n", lsf_out.ci_pf);
          exit(-1);
       }
-      for (r = 0; r <=7; r++) { fprintf(fp_pf, message[r]); }
+      for (r = 0; r <=7; r++) { fprintf(fp_pf, "%s", message[r]); }
       fclose(fp_pf);
    }
 	

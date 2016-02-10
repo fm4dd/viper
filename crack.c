@@ -11,7 +11,7 @@ int crack (crack_input) {
    int  ui = lsf_out.ci_ui*60;
    int  uicount	= 0;
    int  rf = lsf_out.ci_rf*60;
-   char salt[2]			= "";
+   char salt[3]			= "";
    int  i, j, y, z, end = 0;
    int  k = 0;
    double tot_num = 0;
@@ -102,7 +102,7 @@ int crack (crack_input) {
          duration = (double) difftime(mktime(&act_time), mktime(&start_time));
          convert(duration, time_done);
          /* debug only */
-         // printf("We got it!!!! ----> %s\n", checkpass);
+         //printf("We got it!!!! ----> %s\n", checkpass);
          the_res(lsf_out, checkpass, start_time);
       }
 			
@@ -172,7 +172,7 @@ int crack (crack_input) {
                }
                strcpy(strrchr(dnum, ','), "\0");
 
-               printf(fp_pf, "--viper_prog--\n");
+               fprintf(fp_pf, "--viper_prog--\n");
                fprintf(fp_pf, "%d\n", lsf_out.ci_pws);
                fprintf(fp_pf, "%d\n", lsf_out.ci_pwl);
                fprintf(fp_pf, "%s\n", lsf_out.ci_pass);
