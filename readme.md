@@ -25,15 +25,16 @@ The original, Hale's viper.pl on Linux: 16329 CPS
 
 Hale's viper.pl on Solaris: 659 CPS
 
-| System | CPU | OS | Version | Compiler | CPS rate |
-|--------|-----|----|---------|----------|----------|
-| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 39062 |
-| Desktop PC | Pentium III 650Mhz | Windows | Win98 | gcc | 51282 |
-| Desktop PC | Pentium III 650Mhz | DOS | 7.0  | djgpp | 51282 |
-| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 24691 |
-| HP 9000-B180L |  PA-7300LC 180Mhz | HPUX | 10.20 | gcc | 6993 |
-| HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 121,212 |
-| Cloud Server | 1x CPU shared | Linux | 2.6.31 | gcc | 150,000 |
+|Year| System | CPU | OS | Version | Compiler | CPS rate |
+|----|--------|-----|----|---------|----------|----------|
+|2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 39062 |
+|2000| Desktop PC | Pentium III 650Mhz | Windows | Win98 | gcc | 51282 |
+|2000| Desktop PC | Pentium III 650Mhz | DOS | 7.0  | djgpp | 51282 |
+|2000| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 24691 |
+|2001| HP 9000-B180L |  PA-7300LC 180Mhz | HPUX | 10.20 | gcc | 6993 |
+|2004| HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 121,212 |
+|2011| Cloud Server | 1x CPU shared | Linux | 2.6.31 | gcc | 150,000 |
+|2016| Cloud Server | 1x CPU shared | Linux | 4.4.0 | gcc | 250,000 |
 
 
 ### Usage
