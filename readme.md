@@ -32,11 +32,11 @@ Modified viper (C):
 
 |Year| System | CPU | OS | Version | Compiler | CPS rate |
 |----|--------|-----|----|---------|----------|----------|
-|2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 40000 |
-|2000| Desktop PC | Pentium III 650Mhz | Windows | Win98 | gcc | 50000 |
-|2000| Desktop PC | Pentium III 650Mhz | DOS | 7.0  | djgpp | 50000 |
+|2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 40,000 |
+|2000| Desktop PC | Pentium III 650Mhz | Windows | Win98 | gcc | 50,000 |
+|2000| Desktop PC | Pentium III 650Mhz | DOS | 7.0  | djgpp | 50,000 |
 |2000| HP 9000-B180L |  PA-7300LC 180Mhz | HPUX | 10.20 | gcc | 7000 |
-|2001| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 25000 |
+|2001| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 25,000 |
 |2004| HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 120,000 |
 |2011| Cloud Server | 2x vCPU | Linux | 2.6.31 | gcc | 150,000 |
 |2016| Cloud Server | 4x vCPU | Linux | 4.4.0 | gcc | 250,000 |
