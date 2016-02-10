@@ -25,7 +25,7 @@ The original, Hale's viper.pl (Perl):
 
 |Year| System | CPU | OS | Version | CPS rate |
 |----|--------|-----|----|---------|----------|
-|2000| Desktop PC | Pentium III 650Mhz | Linux | gcc | 16,000 |
+|2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | 16,000 |
 |2001| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | 700 |
 
 Modified viper (C):
