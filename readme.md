@@ -24,14 +24,14 @@ Viper runs under Linux, Solaris, HPUX and DOS/Windows.
 The original, Hale's viper.pl (Perl):
 
 |Year| System | CPU | OS | Version | CPS rate |
-|----|--------|-----|----|---------|----------|
+|----|--------|-----|----|---------|---------:|
 |2000| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | 700 |
 |2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | 16,000 |
 
 Modified viper (C):
 
 |Year| System | CPU | OS | Version | Compiler | CPS rate |
-|----|--------|-----|----|---------|----------|----------|
+|----|--------|-----|----|---------|----------|---------:|
 |2000| HP 9000-B180L |  PA-7300LC 180Mhz | HPUX | 10.20 | gcc | 7000 |
 |2000| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 25,000 |
 |2000| Desktop PC | Pentium III 650Mhz | Linux | 2.2.13 | gcc | 40,000 |
