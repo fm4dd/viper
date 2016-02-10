@@ -39,7 +39,7 @@ Modified viper (C):
 |2001| SparcStation | SUN U-Sparc 400Mhz | Solaris | 2.6 | gcc | 25,000 |
 |2004| HP Laptop | 1x 1.7 GHz AMD64 | Windows | WinXP | gcc | 120,000 |
 |2011| Cloud Server | 2x vCPU | Linux | 2.6.31 | gcc | 150,000 |
-|2016| Cloud Server | 4x vCPU | Linux | 4.4.0 | gcc | 250,000 |
+|2016| Cloud Server | Xeon E5-2680 2.5GHz | Linux | 4.4.0 | gcc | 250,000 |
 
 
 ### Usage
